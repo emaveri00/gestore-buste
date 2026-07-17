@@ -28,7 +28,7 @@ Strumento che prende un PDF multi-pagina contenente le buste paga, le divide aut
 ## Installazione
 ```bash
 # Clona il repository
-git clone https://github.com/tuousername/gestore-buste.git
+git clone https://github.com/emaveri00/gestore-buste
 cd gestore-buste
 
 # Copia e configura le variabili d'ambiente
