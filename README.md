@@ -35,18 +35,6 @@ cd gestore-buste
 # Copia e configura le variabili d'ambiente
 cp .env.example .env
 # Modifica .env con le tue credenziali
-
-# Scarica le dipendenze
-go mod tidy
-
-# Compila
-go build -o gestore-buste
-
-
-## Configurazione 
-
-# file.env
-
 # Database MySQL
 username=root
 password=tua_password
@@ -58,6 +46,18 @@ SMTP_HOST=smtp.gmail.com
 SMTP_USER=tua_email@gmail.com
 SMTP_PASS=app_password_gmail
 SMTP_FROM=noreply@tuaazienda.it
+
+
+# Scarica le dipendenze
+go mod tidy
+
+# Compila
+go build -o gestore-buste
+
+
+## Configurazione 
+
+
 
 
 # Database MySQL
