@@ -43,7 +43,22 @@ go mod tidy
 go build -o gestore-buste
 
 
-## Configurazione .env
+## Configurazione 
+
+# file.env
+
+# Database MySQL
+username=root
+password=tua_password
+server=localhost
+dbName=gestore_buste
+
+# SMTP (es. Gmail)
+SMTP_HOST=smtp.gmail.com
+SMTP_USER=tua_email@gmail.com
+SMTP_PASS=app_password_gmail
+SMTP_FROM=noreply@tuaazienda.it
+
 
 # Database MySQL
 username=root
