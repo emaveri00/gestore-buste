@@ -6,11 +6,11 @@
 - [Database](#database)
 
 
-##Descrizione
+## Descrizione
 Divide PDF multi-pagina con buste paga e le invia automaticamente ai dipendenti
 Strumento che prende un PDF multi-pagina contenente le buste paga dei dipendenti, le divide automaticamente in file singoli organizzati per anno e mese, e le invia via email a ciascun destinatario corretto — eliminando il lavoro manuale e riducendo il rischio di errore.
 
-##Funzionalità
+## Funzionalità
 Lettura di PDF multi-pagina con buste paga
 Riconoscimento automatico del dipendente tramite codice fiscale
 Estrazione della pagina singola come PDF autonomo
@@ -19,14 +19,14 @@ Invio email automatico al dipendente con allegato
 Tracciamento nel database dello stato di ogni invio (pending / sent / failed)
 Prevenzione degli invii doppi grazie al controllo di idempotenza
 
-##Tecnologie
+## Tecnologie
 Go — linguaggio principale
 MySQL — persistenza dati e log invii
 pdfcpu — manipolazione e split dei PDF
 ledongthuc/pdf — estrazione testo dai PDF
 SMTP — invio email
 
-##Installazione
+## Installazione
 
 # Clona il repository
 git clone https://github.com/tuousername/gestore-buste.git
@@ -43,7 +43,7 @@ go mod tidy
 go build -o gestore-buste
 
 
-##Configurazione .env
+## Configurazione .env
 
 # Database MySQL
 username=root
@@ -57,7 +57,7 @@ SMTP_USER=tua_email@gmail.com
 SMTP_PASS=app_password_gmail
 SMTP_FROM=noreply@tuaazienda.it
 
-##Database:
+## Database:
 
 CREATE DATABASE IF NOT EXISTS gestore_buste 
 CHARACTER SET utf8mb4 
